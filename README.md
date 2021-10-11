@@ -33,13 +33,13 @@ Get the default password
 
 Login into Argo CLI
 
-argo login 
+`argo login`
 
 It will prompt for credentials. Default username is admin and enter the password that received  from secret
 
 ### Deploy application from CLI
 
-* argocd app create demo --repo https://github.com/sathish-cs/k8s-argocd  --dest-namespace default --path . --dest-server https://kubernetes.default.svc
+* ```argocd app create demo --repo https://github.com/sathish-cs/k8s-argocd  --dest-namespace default --path . --dest-server https://kubernetes.default.svc```
 
 
 	* --repo - Provide the git repository where the code relies 
@@ -54,16 +54,16 @@ Get the clusters using the below command
 
 	 argocd cluster list
 
-* argocd app list - used to check the status of app. Status remains outofsync that needs to be synced to deploy application
+* ```argocd app list``` - used to check the status of app. Status remains outofsync that needs to be synced to deploy application
 
-* argocd app sync demo 
+* ```argocd app sync demo``` 
 
 Sync policy can change to automatic to detect and deploy manifests automatically if any changes made on repository.
 
 
 To check all the resources deployed in the application
 
-* argocd app resources demo
+* ```argocd app resources demo```
 
 In this case it shows deployments and services
 
