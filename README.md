@@ -52,7 +52,7 @@ It will prompt for credentials. Default username is admin and enter the password
 
 Get the clusters using the below command
 
-	* argocd cluster list
+	 argocd cluster list
 
 * argocd app list - used to check the status of app. Status remains outofsync that needs to be synced to deploy application
 
